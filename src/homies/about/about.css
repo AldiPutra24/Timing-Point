@@ -1,0 +1,22 @@
+body {
+    background-image: linear-gradient(to right, #E22865, #37ADCD);
+    margin: 50px;
+    box-shadow: 5px 5px 5px 0px rgb(247, 231, 231);
+    font-size: 18px;
+    /**font-weight: bold;**/
+    font-family: poppins;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    word-spacing: 10px;
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    border: 5px solid lightgray;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
