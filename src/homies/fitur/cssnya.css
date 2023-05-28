@@ -1,0 +1,22 @@
+@font-face {
+    font-family: fontku;
+    src: url(CandyBeans.otf);
+}
+
+h2{
+    text-align: center;
+    font-family: fontku;
+}
+
+body{
+    background-image: linear-gradient(to right, #E7B7C8, #47CACC);
+}
+
+.row{
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .7rem;
+    overflow: hidden;
+}
+
