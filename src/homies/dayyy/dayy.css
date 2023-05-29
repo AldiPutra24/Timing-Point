@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 body {
-    background-image: linear-gradient(to right, #E22865, #37ADCD);
+    background-image: linear-gradient(to right, #E7B7C8, #47CACC);
+}
+
+h1{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: #c77a95;
 }
 
 .grid {
@@ -7,7 +15,7 @@ body {
     grid-template-columns: repeat(4,1fr);
     margin: 50px;
     align-items: center;
-    grid-gap: 30px ;
+    grid-gap: 45px ;
 }
 
 img {
@@ -15,11 +23,10 @@ img {
 }
 
 .grid > article {
-    box-shadow: 10px 5px 5px 0px black;
+    box-shadow: 10px 5px 5px 0px rgb(37, 84, 102);
     border-radius: 30px;
     text-align: center;
     background: whitesmoke;
-    /**width: 300px;**/
     transition: transform;
 }
 
