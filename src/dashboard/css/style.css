@@ -89,10 +89,17 @@
   display: none;
 }
 
-/* .account{
-  width: 320%;
-  margin-top: 1%;
-} */
+.account{
+  width: 100%;
+  float: right;
+}
+.account img {
+  width: 40px;
+height: 30px;
+float: right;
+margin-top: 1%;
+}
+
 
 /* menu */
 #menu-button {
