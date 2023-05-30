@@ -1,18 +1,18 @@
 const menu = document.getElementById('menu-label');
-const sidebar = document.getElementsByClassName('sidebar')[0];
+const sidebar = document.getElementsByClassName('sidebar-1')[0];
 
 menu.addEventListener('click', function () {
   sidebar.classList.toggle('hide');
 });
 
-let list = document.querySelectorAll('.list-item');
+let list = document.querySelectorAll('.list-item-1');
 for (let i = 0; i < list.length; i++) {
   list[i].onclick = function () {
     let j = 0;
     while (j < list.length) {
-      list[j++].className = 'list-item';
+      list[j++].className = 'list-item-1';
     }
-    list[i].className = 'list-item active';
+    list[i].className = 'list-item-1 active';
   };
 }
 

@@ -4,12 +4,12 @@
   padding: 0;
 }
 
-.container {
+.container-1 {
   display: flex;
   min-height: 100vh;
   flex-direction: row;
 }
-.sidebar {
+.sidebar-1 {
   background-color: #e96fc0;
   width: 260px;
   padding: 24px;
@@ -17,13 +17,12 @@
   box-sizing: border-box;
   flex-direction: column;
   transition: all ease-in 0.3s;
-  
 }
-.sidebar.hide {
+.sidebar-1.hide {
   width: 87px;
   transition: all ease-out 0.3s;
 }
-.sidebar .description-header {
+.sidebar-1 .description-header-1 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -31,10 +30,10 @@
   text-align: center;
   color: #286d77;
 }
-.sidebar.hide .description-header {
+.sidebar-1.hide .description-header-1 {
   display: none;
 }
-.sidebar a {
+.sidebar-1 a {
   display: flex;
   text-decoration: none;
   text-align: center;
@@ -51,7 +50,7 @@
   box-sizing: border-box;
 } */
 
-.sidebar .header .list-item {
+.sidebar-1 .header-1 .list-item-1 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -60,8 +59,42 @@
   /* height: 40px; */
   box-sizing: border-box;
 }
-.sidebar .header .list-item .icon {
+.sidebar-1 .header-1 .list-item-1 .icon-1 {
   padding-right: 12px;
+}
+
+.sidebar-1 .main-1 .list-item-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all ease-in 0.2s;
+  width: 200%;
+}
+.sidebar-1 .main-1 .list-item-1.active {
+  background: #286d77;
+}
+.sidebar-1 .main-1 .list-item-1:hover {
+  background: #286d77;
+  transition: ease-in 0.2s;
+}
+.sidebar-1 .icon-1 {
+  width: 45px;
+  height: 25px;
+  padding-right: 12px;
+}
+.sidebar-1 .main-1 .list-item-1 .description-1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+}
+.sidebar-1.hide .main-1 .list-item-1 .description-1 {
+  display: none;
 }
 
 .main-content {
@@ -70,40 +103,6 @@
   display: flex;
   flex-direction: column;
 }
-.sidebar .main .list-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 10px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  transition: all ease-in 0.2s;
-  width: 110%;
-}
-.sidebar .main .list-item.active {
-  background: #286d77;
-}
-.sidebar .main .list-item:hover {
-  background: #286d77;
-  transition: ease-in 0.2s;
-}
-.sidebar .icon {
-  width: 25px;
-  height: 25px;
-  padding-right: 12px;
-}
-.sidebar .main .list-item .description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 16px;
-  text-align: center;
-  color: #fff;
-}
-.sidebar.hide .main .list-item .description {
-  display: none;
-}
-
 #account-button {
   width: 32px;
   overflow: hidden;
@@ -207,17 +206,17 @@
   width: 100%;
 }
 /* container main */
-.container-main {
+.container-main-1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 /* jam widget */
-.container-main .datetime {
+.container-main-1 .datetime-1 {
   color: #fff;
   background: #10101e;
   font-family: 'Segoe UI', sans-serif;
-  width: 340px;
+  width: 370px;
   padding: 15px 10px;
   border: 3px solid #286d77;
   border-radius: 5px;
@@ -225,30 +224,30 @@
   transition-property: background, box-shadow;
   float: right;
 }
-.container-main .datetime:hover {
+.container-main-1 .datetime-1:hover {
   background: #2e94e3;
   box-shadow: 0 0 30px #2e94e3;
 }
-.container-main .date {
+.container-main-1 .date-1 {
   font-size: 20px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 3px;
 }
-.container-main .time {
+.container-main-1 .time-1 {
   font-size: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-main .time span:not(:last-child) {
+.container-main-1 .time-1 span:not(:last-child) {
   position: relative;
   margin: 0 6px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 3px;
 }
-.container-main .time span:last-child {
+.container-main-1 .time-1 span:last-child {
   background: #2e94e3;
   font-size: 30px;
   font-weight: 600;
