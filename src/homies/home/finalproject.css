@@ -1,47 +1,70 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-hr {
-    margin-left: 165px;
-    margin-right: 795px;
-}
+/*hr {
+    margin-left: 12%;
+    margin-right: 39%;
+}*/
 
-.main {
+.main1 {
     width: 100%;
+    display: grid;
     background-image: linear-gradient(to right, #E7B7C8, #47CACC);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
-.navbar {
-    width: 1200px;
+.navbar1 {
+    width: 100%;
     height: 75px;
-    margin: auto;
+    padding-top: 10px;  
 }
 
 .icon {
+    margin-left: 10%;
     width: 200px;
     float: left;
     height: 70px;
+    width: 300px;
 }
 
 .logo {
     color: #286d77;
-    font-size: 35px;
+    font-size: 45px;
     font-family: Arial;
     padding-left: 20px;
     float: left;
     padding-top: 10px;
-    margin-top: 5px;
+    margin-top: 5px
+
+}
+
+body hr{
+    border: none;
+    height: 2px;
+    background-color: #7a7a7a;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+section h5{
+    color: black;
+}
+
+section p{
+    color: rgb(54, 54, 54);
 }
 
 .menu {
     width: 400px;
-    float: left;
     height: 70px;
+    float: left;
 }
 
 ul {
@@ -66,20 +89,21 @@ ul li a {
     transition: 0.4s ease-in-out;
 }
 
+.login-signup {
+    display: none;
+}
+
 ul li a:hover {
     color: #286d77;
 }
 
 .search {
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-    margin-top: 10px;
+    margin-left: 60%;
 }
 
 .srch {
     font-family: 'Times New Roman';
-    width: 200px;
+    width: 300px;
     height: 50px;
     background: transparent;
     border: 1px solid #ac5473;
@@ -91,9 +115,10 @@ ul li a:hover {
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    
 }
 
-.btn {
+.btn1 {
     width: 100px;
     height: 50px;
     background: #c6889d;
@@ -107,11 +132,11 @@ ul li a:hover {
     cursor: pointer;
 }
 
-.btn:hover {
+.btn1:hover {
     color: #000;
 }
 
-.btn:focus {
+.btn1:focus {
     outline: none;
 }
 
@@ -120,11 +145,15 @@ ul li a:hover {
 }
 
 .content {
-    width: 1200px;
-    height: auto;
-    margin: auto;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     color: #fff;
     position: relative;
+    margin-top: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 .content .par {
@@ -139,8 +168,9 @@ ul li a:hover {
     font-family: 'Times New Roman';
     font-size: 50px;
     padding-left: 20px;
-    margin-top: 9%;
+    margin-top: 50px;
     letter-spacing: 2px;
+    width: 350px;
 }
 
 .content .cn {
@@ -177,19 +207,19 @@ ul li a:hover {
     font-size: 65px;
 }
 
-.form {
-    width: 250px;
-    height: 380px;
+.form1 {
     background: #24636d94;
-    position: absolute;
-    top: -20px;
-    left: 870px;
     transform: translate(0%, -5%);
     border-radius: 10px;
     padding: 25px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin: 15px 150px;
+    
 }
 
-.form h2 {
+.form1 h2 {
     width: 220px;
     font-family: sans-serif;
     text-align: center;
@@ -201,7 +231,7 @@ ul li a:hover {
     padding: 8px;
 }
 
-.form input {
+.form1 input {
     width: 240px;
     height: 35px;
     background: transparent;
@@ -216,7 +246,7 @@ ul li a:hover {
     font-family: sans-serif;
 }
 
-.form input:focus {
+.form1 input:focus {
     outline: none;
 }
 
@@ -255,14 +285,14 @@ ul li a:hover {
     font-weight: bold;
 }
 
-.form .link {
+.form1 .link {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     padding-top: 20px;
     text-align: center;
 }
 
-.form .link a {
+.form1 .link a {
     text-decoration: none;
     color: white;
 }
@@ -290,3 +320,46 @@ ul li a:hover {
 .icons ion-icon:hover {
     color: #cea6b3;
 }
+
+.hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+.hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media screen and (max-width: 1250px) {
+    .search {
+      display: none;
+    }
+  }
+@media screen and (max-width: 950px) {
+    .form {
+        display: none;
+    }
+    .login-signup {
+        display: block;
+    }
+    ul li {
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 780px) {
+    ul li {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        justify-content: right;
+    }
+  }
+@media screen and (max-width: 870px) {
+    ul li {
+        margin-left: 30px;
+    }
+  }
+
