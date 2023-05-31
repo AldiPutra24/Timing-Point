@@ -53,12 +53,20 @@ body hr{
     margin-right: 4%;
 }
 
+section{
+    background-color: #0000004b;
+}
+
+section img{
+    border-radius: 10%;
+}
+
 section h5{
     color: black;
 }
 
 section p{
-    color: rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
 }
 
 .menu {
