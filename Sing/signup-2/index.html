@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signup 2</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<div class="container">
+    <div class="login-card">
+        <img src="logoR.jpg" />
+        <h2>Sign Up</h2>
+        <h3>Enter your credentials</h3>
+
+        <form class="login-form" action="/auth/register" method="post">
+
+            <div class="username">
+                <input spellcheck="false" class="control" type="email" placeholder="Email" name="Email" />
+                <div id="spinner" class="spinner"></div>
+            </div>
+            <input class="control" name="Nomor" placeholder="Nomor Telepon" />
+            <input placeholder="Tanggal Lahir" class="control" type="text" onfocus="(this.type='date')"
+                onblur="(this.type='text')" name="DOB"  />
+            <input spellcheck="false" class="control" id="password" type="password" placeholder="Password" name="Password"
+                onkeyup="handleChange()" />
+
+            <div id="bars">
+                <div></div>
+            </div>
+
+            <div class="strength" id="strength"></div>
+            <button class="control" type="button">JOIN NOW</button>
+        </form>
+
+    </div>
+    <div class="left">
+
+        <span class="loginwith">Sign in with<br />social network</span>
+        <div class="bg-image"></div>
+        <button class="social-signin facebook">Log in with facebook</button>
+        <button class="social-signin twitter">Log in with Twitter</button>
+        <button class="social-signin google">Log in with Google+</button>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="mysql.js"></script>
+<h4 class="alert alert-danger mt-4">{{message}}</h4>
+</body>
+
+</html>
