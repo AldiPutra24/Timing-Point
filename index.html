@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -49,7 +50,7 @@
             <li><a href="#about">About Us</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#suggestion">suggestion</a></li>
-            <li><a href="#">Login</a></li>
+            <li><button id="loginBtn">Login</button></li>
           </ul>
           <button class="hamburger hamburger--spin" type="button">
             <span class="hamburger-box">
@@ -59,6 +60,24 @@
         </div>
       </div>
     </div>
+    
+    <div class="popup" id="loginPopup">
+      <!-- Konten pop-up login -->
+      <button class="login-popup-close">&times;</button>
+      <h1>Login</h1>
+      <form  action="src/dashboard/index.html">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <a href="#">Forgot Password?</a><br>
+        <input id="sumbit" type="submit" value="Login">
+        <div class="link">Not a member? <a href="Sing/index.html">Sigup here</a></div>
+      </form>
+    </div>
+  
+    <div class="blur-background" id="blurBackground"></div>
+  
     <!--   Navbar -->
 
     <!--   Header -->

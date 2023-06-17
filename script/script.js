@@ -2,6 +2,29 @@ const menuBar = document.querySelector(".hamburger");
 const menuNav = document.querySelector(".navbar");
 const menuNavigation = document.querySelector(".menu");
 
+const loginBtn = document.getElementById('loginBtn');
+const loginPopup = document.getElementById('loginPopup');
+const blurBackground = document.getElementById('blurBackground');
+const closePopupButton = document.querySelector(".login-popup-close");
+
+loginBtn.addEventListener('click', function() {
+  loginPopup.style.display = 'block';
+  blurBackground.style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Menghilangkan scroll
+});
+
+blurBackground.addEventListener('click', function() {
+  loginPopup.style.display = 'none';
+  blurBackground.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Mengaktifkan scroll kembali
+});
+
+closePopupButton.addEventListener("click", function() {
+  loginPopup.style.display = 'none';
+  blurBackground.style.display = 'none';
+  document.body.style.overflow = 'auto'; // Mengaktifkan scroll kembali
+});
+
 menuBar.addEventListener("click", () => {
   menuBar.classList.toggle("is-active");
   menuNavigation.classList.toggle("menu-active");
