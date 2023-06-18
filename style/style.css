@@ -138,7 +138,7 @@
   width: 30px;
 }
 
-.popup {
+#loginPopup {
   display: none;
   position: fixed;
   top: 50%;
@@ -159,7 +159,7 @@
 }
 
 .popup input{
-  display: block;
+ 
   width: 90%;
   background: transparent;
   border: none;
