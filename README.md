@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<h1>FP-Pemrograman Web</h1>
+<h1>Daftar Anggota Kelompok</h1>
 
 
 | Name  | NIM |
