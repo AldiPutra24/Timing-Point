@@ -18,7 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 // return view('login/signin');
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashbroad.dashbroad',[
+        "title"=>'dashbroad'
+    ]);
 });
 
 

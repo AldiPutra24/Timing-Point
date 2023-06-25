@@ -26,7 +26,7 @@ class loginController extends Controller
         return redirect('/');
     }
     public function login(){
-        return view('dashbroad.main');
+        return view('dashbroad.layout.main');
     }
 
     public function loginpost(Request $request){
@@ -35,7 +35,7 @@ class loginController extends Controller
             'password' => $request->password,
         ];
         if (Auth::attempt($credetials)) {
-            return view('dashbroad.main');
+            return view('dashbroad.dashbroad');
         }
         return back()->with('success', 'Login Success');
 
