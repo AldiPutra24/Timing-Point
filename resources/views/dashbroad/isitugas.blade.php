@@ -4,3 +4,7 @@
 <h1> halo isi tugas</h1>
 
 @endsection
+
+@section('script')
+
+@endsection

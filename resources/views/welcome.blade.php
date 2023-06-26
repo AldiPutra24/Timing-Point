@@ -172,27 +172,48 @@
             <p>Your Feedback Matters: Share Your Suggestions and Critiques</p>
           </div>
           <div class="form-suggestion">
-            <form action="" method="post">
+            <form action={{ route('PostSugest') }} method="post">
+                @csrf
               <table>
                 <tr>
                   <td>
-                    <input type="text" name="First Name" placeholder="First Name" required autocomplete="off" />
+                    <input class="control  @error('First_Name') is-invalid @enderror" type="text" name="First_Name" placeholder="First Name" required autocomplete="off" />
+                    @error('First_Name')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
                   </td>
                   <td>
-                    <input type="text" name="Last Name" placeholder="Last Name" autocomplete="off" />
-                  </td>
+                    <input  class="control  @error('Last_Name') is-invalid @enderror" type="text" name="Last_Name" placeholder="Last Name" autocomplete="off" />
+                    @error('Last_Name')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+                </td>
                 </tr>
                 <tr>
-                  <td colspan="2"><input type="email" name="Email" placeholder="Your Email" required autocomplete="off" style="width: 100%" /></td>
+                  <td colspan="2"><input class="control  @error('Email') is-invalid @enderror" type="email" name="Email" placeholder="Your Email" required autocomplete="off" style="width: 100%" /></td>
+                  @error('Email')
+                  <div class="invalid-feedback">
+                      {{ $message }}
+                  </div>
+                  @enderror
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <textarea name="Pesan" cols="30" rows="10" placeholder="Pesan..." required style="width: 100%"></textarea>
-                  </td>
+                    <textarea class="control  @error('Pesan') is-invalid @enderror" name="Pesan" cols="30" rows="10" placeholder="Pesan..." required style="width: 100%"></textarea>
+                    @error('Pesan')
+                  <div class="invalid-feedback">
+                      {{ $message }}
+                  </div>
+                  @enderror
+                </td>
                 </tr>
                 <tr>
                   <td colspan="2">
-                    <button type="submit" onclick="return confirm('Apakah Anda ingin Mengirim Pesan & Saran?')">Kirim</button>
+                    <button type="submit" >Kirim</button>
                   </td>
                 </tr>
               </table>
@@ -322,5 +343,7 @@
     <script>
       AOS.init();
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>

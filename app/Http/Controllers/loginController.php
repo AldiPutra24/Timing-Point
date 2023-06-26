@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 
+
 class loginController extends Controller
 {
     public function register(){
@@ -22,28 +23,37 @@ class loginController extends Controller
             'password'=> 'required'
         ]);
         $validatedData['password']=Hash::make($validatedData['password']);
-        User::create($validatedData);
+
+        $user=User::create($validatedData);
+        auth()->login($user);
+
         return redirect('/');
     }
     public function login(){
-        return view('dashbroad.layout.main');
+        return view('dashbroad.dashbroad');
     }
 
     public function loginpost(Request $request){
         $credetials = [
-            'email' => $request->email,
-            'password' => $request->password,
+            'email' => $request->loginemail,
+            'password' => $request->loginpassword,
         ];
         if (Auth::attempt($credetials)) {
-            return view('dashbroad.dashbroad');
+            $request -> session()->regenerate();
+            // $user=Auth::user();
+            // $id=Auth::id();
+            return redirect()->intended('dashbroad');
         }
-        return back()->with('success', 'Login Success');
+        return back()->with('LoginEror', 'Login gagal!!!');
 
     }
     public function logout(){
-        // Auth::logout();
-
+        Auth::logout();
         return view('welcome');
     }
 
+    // public function index(){
+    //     $userData   = user::all();
+    //     return view('index')->with('user', $userData);
+    // }
 }

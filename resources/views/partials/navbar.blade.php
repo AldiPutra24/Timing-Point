@@ -31,9 +31,9 @@
     <form  action={{ route('login') }} method="POST">
         @csrf
       <label for="username">Username:</label>
-      <input type="text" id="username" name="email" required><br><br>
+      <input type="text" id="username" name="loginemail" required><br><br>
       <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required><br><br>
+      <input type="password" id="password" name="loginpassword" required><br><br>
       <a href="#">Forgot Password?</a><br>
       <button id="sumbit" type="submit">LogIn</button>
       <div class="link">Not a member? <a href="{{ route('register') }}">SignUp Here</a></div>

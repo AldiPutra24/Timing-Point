@@ -1,5 +1,4 @@
 * {
-    font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -10,7 +9,7 @@
     flex-direction: row;
 }
 .sidebar-1 {
-    background-color: #e96fc0;
+    background-color: #b08968;
     width: 260px;
     padding: 24px;
     display: flex;
@@ -28,7 +27,7 @@
     font-size: 24px;
     line-height: 16px;
     text-align: center;
-    color: #286d77;
+    color: #fff;
 }
 .sidebar-1.hide .description-header-1 {
     display: none;
@@ -40,15 +39,6 @@
     align-items: center;
     width: 100%;
 }
-/* .sidebar .header .list-item-desc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 10px;
-  border-radius: 8px;
-  height: 40px;
-  box-sizing: border-box;
-} */
 
 .sidebar-1 .header-1 .list-item-1 {
     display: flex;
@@ -59,9 +49,7 @@
     /* height: 40px; */
     box-sizing: border-box;
 }
-.sidebar-1 .header-1 .list-item-1 .icon-1 {
-    padding-right: 12px;
-}
+
 
 .sidebar-1 .main-1 .list-item-1 {
     display: flex;
@@ -80,10 +68,11 @@
     background: #286d77;
     transition: ease-in 0.2s;
 }
-.sidebar-1 .icon-1 {
+.sidebar-1 i {
     width: 45px;
     height: 25px;
     padding-right: 12px;
+    text-align: center;
 }
 .sidebar-1 .main-1 .list-item-1 .description-1 {
     font-style: normal;
@@ -98,7 +87,7 @@
 }
 
 .main-content {
-    background-color: white;
+    background-color: bisque;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -108,23 +97,15 @@
     overflow: hidden;
     float: right;
     margin-top: 1%;
+    /* display: none; */
 }
-#account-label {
-    position: relative;
-    display: block;
-    height: 20px;
+#account-button i {
     cursor: pointer;
 }
 
 #account-chekbox {
     display: none;
 }
-/* #account img {
-  width: 40px;
-  height: 30px;
-  float: right;
-  margin-top: 1%;
-} */
 
 /* menu */
 #menu-button {
@@ -150,7 +131,7 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: #286d77;
+    background-color: #fff;
 }
 
 #menu-label:after,
@@ -176,7 +157,7 @@
     top: 5px;
     right: 0;
     left: 0;
-    color: #286d77;
+    color: #fff;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
@@ -199,7 +180,7 @@
     top: 0;
     width: 100%;
     height: 50px;
-    background-color: #e96fc0;
+    background-color: #b08968;
     display: flex;
     flex-direction: row;
 }
@@ -214,8 +195,8 @@
 }
 /* jam widget */
 .container-main-1 .datetime-1 {
-    color: #fff;
-    background: #10101e;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5); 
     font-family: "Segoe UI", sans-serif;
     width: 370px;
     padding: 15px 10px;
@@ -257,6 +238,70 @@
     padding: 0 5px;
     border-radius: 3px;
 }
+
+/* harian */
+@import url("https://fonts.googleapis.com/css2?family=Karma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+
+@font-face {
+    font-family: fontku;
+    src: url(CandyBeans.otf);
+}
+
+h2 {
+    text-align: center;
+    font-family: fontku;
+    color: #9c6644;
+}
+
+body {
+    background-image: linear-gradient(to right, #e6ccb2, #ede0d4);
+}
+
+button#add-input.btn.btn-sm.btn-primary.float-end {
+    background-color: #ddb892;
+    border: #b08968;
+    color: #9c6644;
+    font-family: "Playfair", serif;
+    font-weight: bold;
+    margin-right: 17px;
+    font-size: 16px;
+}
+
+div.form-check.form-switch.ms-2 {
+    margin-top: 6px;
+}
+
+table.table.table-sm.table-bordered {
+    margin-top: 15px;
+    border: 1px solid #ddb892;
+}
+
+.row {
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 0.4rem 0.8rem #0005;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+
+button.btn.btn-sm.btn-danger.delete-record.float-end {
+    margin-right: 22px;
+    margin-left: 2px;
+    margin-top: 4px;
+    margin-left: 6px;
+}
+
+.head_table {
+    text-align: center;
+    font-family: "Karma", serif;
+}
+
+#data {
+    font-family: "Karma", serif;
+}
+
+/* end harian */
 
 /* footer */
 .footer {
@@ -392,6 +437,8 @@
     font-family: font3;
     src: url(../assets/Karma-Regular.ttf);
 }
+
+/* end footer */
 
 @keyframes MoveUpThenMoveDown {
     0% {

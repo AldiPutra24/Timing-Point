@@ -8,13 +8,11 @@
       </div>
       <div id="account-button">
         <input type="checkbox" id="account-chekbox">
-        <label for="account-chekbox" id="account-label"></label>
-        <img src="assets/account.svg" />
+        <i class="fa-solid fa-user"></i>
       </div>
       <div class="logout">
-      <form action="{{ route('logout') }}" class="d-flex" role="search">
-          {{-- @csrf
-          @method('DELETE') --}}
+      <form action="{{ route('logout') }}" method="post">
+          @csrf
           <button class="btn btn-danger" type="submit" >Logout</button>
       </form>
   </div>
