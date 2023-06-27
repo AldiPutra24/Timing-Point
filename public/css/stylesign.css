@@ -261,3 +261,7 @@ button.social-signin.google {
   grid-column: 2/5;
   z-index: 3;
 }
+
+.invalid-feedback{
+    color: rgb(248, 142, 142);
+}
