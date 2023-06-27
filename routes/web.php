@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\loginController;
-
+use App\Http\Controllers\PostSugestController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 // return view('login/signin');
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome',[
+        "title"=>'dashbroad']);
 });
 
 
@@ -38,11 +39,13 @@ Route::get('/isitugas', function () {
     return view('dashbroad.isitugas',[
         "title"=>'isitugas'
     ]);
-});Route::get('/notepad', function () {
+});
+Route::get('/notepad', function () {
     return view('dashbroad.notepad',[
         "title"=>'notepad'
     ]);
-});Route::get('/setting', function () {
+});
+Route::get('/setting', function () {
     return view('dashbroad.setting',[
         "title"=>'setting'
     ]);
@@ -53,4 +56,7 @@ Route::get('/register', [loginController::class, 'register'])->name('register');
 Route::post('/register', [loginController::class, 'registerpost'])->name('register');
 Route::get('/login', [loginController::class, 'login'])->name('login');
 Route::post('/login', [loginController::class, 'loginpost'])->name('login');
-Route::get('/logout', [loginController::class, 'logout'])->name('logout');
+Route::post ('/logout', [loginController::class, 'logout'])->name('logout');
+Route::post ('/postSugest', [PostSugestController::class, 'sugestpost'])->name('PostSugest');
+
+// Route::get('/dashbroad',[loginController::class,'index']);

@@ -46,7 +46,7 @@ rename .env.example to .env
 ```
 
 ```
-generate app key
+php artisan key:gen
 ```
 
 ```

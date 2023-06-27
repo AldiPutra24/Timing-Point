@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="content">
-    <h1>Halo Fahrul Fuguh Verdian</h1>
+    <h1>halo Fahrul</h1>
   </div>
   <div class="datetime-1">
     <div class="date-1">
@@ -17,5 +17,5 @@
       <span id="period">AM</span>
     </div>
   </div>
-  
+
 @endsection

@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- Font Awesome CDN -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+    />
     {{-- style css --}}
     <link rel="stylesheet" href="{{ asset('css/styledash.css')}}"/>
   </head>
@@ -23,7 +31,58 @@
         </div>
       </div>
     </div>
-    @include('partials.footer')
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="{{ asset('js/scriptdash.js') }}"></script>
+    <script>
+        // harian
+    let dataRow = 0;
+    $("#add-input").click(() => {
+    dataRow++;
+    inputRow(dataRow);
+    });
+
+    function changeColor(e) {
+    var color = e.value;
+    e.style.color = color;
+    }
+
+    inputRow = (i) => {
+    let tr = `<tr id="input-tr-${i}">
+
+                        <td><div class="form-check form-switch ms-2">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                            </div>
+                        </td>
+
+                        <td><input type="text" class="form-control form-control-sm"></td>
+                        <td><input type="text" class="form-control form-control-sm"></td>
+                        <td><input type="date" class="form-control form-control-sm"></td>
+                        <td><input type="text" class="form-control form-control-sm"></td>
+                        <td><select class="form-select" name="status" id="status" onchange="changeColor(this)">
+                                <option value="red">Belum selesai</option>
+                                <option value="blue">Dalam proses</option>
+                                <option value="green">Selesai</option>
+                                </select></td>
+                        <td><button onclick="validasidelete" class="btn btn-sm btn-danger delete-record float-end" data-id="${i}">Hapus</button></td>
+                    </tr>`;
+    $("#data").append(tr);
+    };
+
+    $("#data").on("click", ".delete-record", function validasidelete() {
+    let text = "Delete the assignment? ";
+    if (confirm(text) == true) {
+        let id = $(this).attr("data-id");
+        $("#input-tr-" + id).remove();
+    } else {
+        text = "Delete canceled!";
+    }
+    document.getElementById("demo").innerHTML = text;
+    });
+    // end harian
+    </script>
+    @yield('script')
+    @include('partials.footer')
   </body>
+
 </html>
