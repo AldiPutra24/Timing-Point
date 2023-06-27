@@ -16,12 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/admin', function () {
+    return view('admin',[
+        "title"=>'Admin']);
+});
+
 // return view('login/signin');
 Route::get('/', function () {
     return view('welcome',[
         "title"=>'dashbroad']);
 });
-
 
 Route::get('/dashbroad', function () {
     return view('dashbroad.dashbroad',[
@@ -50,7 +54,6 @@ Route::get('/setting', function () {
         "title"=>'setting'
     ]);
 });
-
 
 Route::get('/register', [loginController::class, 'register'])->name('register');
 Route::post('/register', [loginController::class, 'registerpost'])->name('register');

@@ -41,3 +41,23 @@
   </div>
   <!--  Copyright -->
   </div>
+
+    <!--  Preloader -->
+    <div class="loader">
+      <img src="assets/loader/Bean Eater-1s-104px.gif" alt="loading.io" />
+    </div>
+    <!--  Preloader -->
+
+        <!-- JS -->
+    <script src="{{ asset('js/script.js') }}"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
