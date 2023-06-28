@@ -16,7 +16,7 @@
       <div class="list-item-1 {{ ($title === "harian" ? 'active': '') }}">
         <a href="/harian">
             <i class="fa-solid fa-gear fa-lg"></i>
-          <span class="description-1">Add tugas</span>
+          <span class="description-1">Add tugas harian</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "isitugas" ? 'active': '') }}">

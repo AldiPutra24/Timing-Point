@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playfair:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+@font-face {
+    font-family: fontku;
+    src: url(CandyBeans.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +58,6 @@
     /* height: 40px; */
     box-sizing: border-box;
 }
-
 
 .sidebar-1 .main-1 .list-item-1 {
     display: flex;
@@ -187,8 +195,8 @@
 .navbar nav {
     width: 100%;
 }
-/* container main */
-.container-main-1 {
+/* content dashbroad */
+.content_dashbroad {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -196,7 +204,7 @@
 /* jam widget */
 .container-main-1 .datetime-1 {
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: "Segoe UI", sans-serif;
     width: 370px;
     padding: 15px 10px;
@@ -238,14 +246,224 @@
     padding: 0 5px;
     border-radius: 3px;
 }
+/* end content dashbroad */
 
 /* harian */
-@import url("https://fonts.googleapis.com/css2?family=Karma&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+.content_harian {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-@font-face {
-    font-family: fontku;
-    src: url(CandyBeans.otf);
+.content_harian h1 {
+    text-align: center;
+    font-family: "Playfair", serif;
+    color: #7f5539;
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px;
+    align-items: center;
+    grid-gap: 45px;
+}
+
+.content_harian img {
+    object-fit: cover;
+}
+
+.grid > article {
+    box-shadow: 5px 5px 5px 0px #7f5539;
+    border-radius: 30px;
+    text-align: center;
+    background: whitesmoke;
+    transition: transform;
+}
+
+.grid > article img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+
+.content {
+    cursor: progress;
+    font-family: "Delius Swash Caps", "cursive";
+    color: #7f5539;
+}
+
+.content2 {
+    font-size: 15px;
+    font-family: "Delius Swash Caps", "cursive";
+}
+
+.grid > article:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* end harian */
+
+/* content harian-lanjut */
+.content_lanjut {
+    margin: auto;
+    font-family: "Delius Swash Caps", "cursive";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70px;
+    padding: 0 20px;
+}
+
+#header h2 {
+    font-size: 2rem;
+}
+
+.content_lanjut .user_input {
+    margin-top: 2px;
+    width: 350px;
+    text-align: center;
+}
+
+.content_lanjut .user_input input {
+    width: 75%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.content_lanjut .user_input input:focus {
+    box-shadow: 0 0 10px #b08968;
+    border: 1px solid #7f5539;
+}
+
+.content_lanjut .user_input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    color: black;
+    transition: 1s;
+    outline: none;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content_lanjut .user-input button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+#to_do_list {
+    width: 500px;
+    margin: auto;
+}
+
+.content_lanjut .item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 1rem;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    background-color: white;
+    border: 1px solid lightgray;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    font-family: "Karma", serif;
+    font-weight: bolder;
+}
+
+.content_lanjut .item:hover {
+    box-shadow: 0 0 20px #b08968;
+    border: 1px solid #b08968;
+}
+
+.content_lanjut .item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    #header {
+        padding: 20px;
+        gap: 10px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #header h2 {
+        margin: 10px 0;
+    }
+
+    .content_harian .user_input {
+        width: 100%;
+    }
+
+    #to_do_list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content_harian .user_input input {
+        width: 74%;
+    }
+}
+
+@media (max-width: 320px) {
+    .content_harian .user_input input {
+        width: 60%;
+    }
+}
+
+/* end content harian-lanjut */
+
+/* isi tugas */
+.content_isitugas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h2 {
@@ -301,7 +519,7 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     font-family: "Karma", serif;
 }
 
-/* end harian */
+/* end isi tugas */
 
 /* footer */
 .footer {

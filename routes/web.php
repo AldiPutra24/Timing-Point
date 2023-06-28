@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\PostSugestController;
 use Illuminate\Support\Facades\Route;
@@ -38,9 +39,14 @@ Route::get('/harian', function () {
         "title"=>'harian'
     ]);
 });
+Route::get('/harian-lanjut', function () {
+    return view('dashbroad.harian-lanjut',[
+        "title"=>'harian-lanjut'
+    ]);
+});
 
 Route::get('/isitugas', function () {
-    return view('dashbroad.isitugas',[
+    return view('dashbroad.isitugas1',[
         "title"=>'isitugas'
     ]);
 });
@@ -61,5 +67,7 @@ Route::get('/login', [loginController::class, 'login'])->name('login');
 Route::post('/login', [loginController::class, 'loginpost'])->name('login');
 Route::post ('/logout', [loginController::class, 'logout'])->name('logout');
 Route::post ('/postSugest', [PostSugestController::class, 'sugestpost'])->name('PostSugest');
+Route::post ('/post', [KegiatanController::class, 'store']);
+
 
 // Route::get('/dashbroad',[loginController::class,'index']);

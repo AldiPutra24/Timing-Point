@@ -11,7 +11,7 @@
         </div>
         @endif
 
-      <label for="username">Username:</label>
+      <label for="username">Email:</label>
       <input type="text" id="username" name="loginusername" required><br><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="loginpassword" required><br><br>

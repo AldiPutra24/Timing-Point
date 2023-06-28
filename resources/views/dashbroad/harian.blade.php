@@ -1,33 +1,59 @@
 @extends('dashbroad.layout.main')
 
 @section('container')
-<h2 class="mt-4">drop your assignment, here !</h2>
-      <div class="mt-5 mb-2 me-0">
-        <div class="column">
-          <button class="btn btn-sm btn-primary float-end" id="add-input">Tambah</button>
-          <br/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div class="tabel-responsive">
-            <table class="table table-sm table-bordered">
-              <thead class="head_table" text-align="center">
-                <tr>
-                  <th>Check</th>
-                  <th>Mata Kuliah</th>
-                  <th>Tugas</th>
-                  <th>Tenggat</th>
-                  <th>Media Pengumpulan</th>
-                  <th>Status</th>
-                  <th>del</th>
-                </tr>
-              </thead>
-              <tbody id="data"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="content_harian">
+            <h1>Let's Make Your Plan</h1>
+            <main class="grid">
+                <article>
+                    <img src="{{ asset('assets/img harian/image11.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/monday.html">Monday !</a></h2>
+                    </div>
+                </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image22.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/tuesday.html">Tuesday !</a></h2>
+                    </div>
+                </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image33.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="/harian-lanjut">Wednesday !</a></h2>
+                    </div>
+                    </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image44.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/thursday.html">Thursday !</a></h2>
+                    </div>
+                    </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image55.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/friday.html">friday !</a></h2>
+                    </div>
+                    </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image6.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/saturday.html">Saturday !</a></h2>
+                    </div>
+                    </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image77.png') }}" width="200px" height="225px">
+                    <div class="content">
+                        <h2 class="btnn"><a href="../gabungan/sunday.html">Sunday !</a></h2>
+                        </div>
+                    </article>
+                <article>
+                    <img src="{{ asset('assets/img harian/image.jpg') }}" width="200px" height="200px">
+                    <div class="content2">
+                        <h2>Do it for your future self. FIGHTING!</h2>
+                    </div>
+                    </article>
+                </main>
+            </div>
 @endsection
+
 

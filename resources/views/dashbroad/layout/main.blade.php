@@ -26,12 +26,13 @@
       @include('dashbroad.partial.sidebar')
       <div class="main-content">
         @include('dashbroad.partial.navbar')
-        <div class="container-main-1" >
+      <div class="container-main-1">
             @yield('container')
-        </div>
+      </div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ asset('js/harian.js') }}"></script>
     <script src="{{ asset('js/scriptdash.js') }}"></script>
     <script>
         // harian
@@ -47,25 +48,27 @@
     }
 
     inputRow = (i) => {
-    let tr = `<tr id="input-tr-${i}">
 
+
+    let tr = `  <tr id="input-tr-${i}">
                         <td><div class="form-check form-switch ms-2">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
                             <label class="form-check-label" for="flexSwitchCheckDefault"></label>
                             </div>
                         </td>
 
-                        <td><input type="text" class="form-control form-control-sm"></td>
-                        <td><input type="text" class="form-control form-control-sm"></td>
-                        <td><input type="date" class="form-control form-control-sm"></td>
-                        <td><input type="text" class="form-control form-control-sm"></td>
-                        <td><select class="form-select" name="status" id="status" onchange="changeColor(this)">
+                        <td><input type="text" class="form-control form-control-sm" name='inputs${i}mata_kuliah'></td>
+                        <td><input type="text" class="form-control form-control-sm" '></td>
+                        <td><input type="date" class="form-control form-control-sm" ></td>
+                        <td><input type="text" class="form-control form-control-sm" ></td>
+                        <td><select class="form-select"  id="status" onchange="changeColor(this)">
                                 <option value="red">Belum selesai</option>
                                 <option value="blue">Dalam proses</option>
                                 <option value="green">Selesai</option>
                                 </select></td>
                         <td><button onclick="validasidelete" class="btn btn-sm btn-danger delete-record float-end" data-id="${i}">Hapus</button></td>
-                    </tr>`;
+
+                    </tr> `;
     $("#data").append(tr);
     };
 
