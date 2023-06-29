@@ -7,7 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<p align= center;">
     <h1>Daftar Anggota Kelompok</h1>
 
 
@@ -20,7 +19,6 @@
     | Muhammad Jundi Robbani | 21.11.4363  |
     | Aldi Putra Miftaqul Ullumn | 21.11.4369  |
     | Ricardo Umbu Siwa Djurumanna Suyatno | 21.11.4380 |
-</p>
 
 
 ## About Laravel
