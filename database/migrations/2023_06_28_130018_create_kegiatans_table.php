@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('tugas');
             $table->date('tenggat');
             $table->string('media');
-            $table->date('status');
+            $table->string('status');
             $table->foreignId('user_id')->constrained();
             $table->timestamps();
         });

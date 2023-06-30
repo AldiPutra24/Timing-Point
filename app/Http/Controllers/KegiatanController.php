@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Kegiatan;
 use Illuminate\Http\Request;
 
+
 class KegiatanController extends Controller
 {
     /**
@@ -28,20 +29,22 @@ class KegiatanController extends Controller
      */
     public function store(Request $request)
     {
-        $request -> validate([
-            'inputs.*.mata_kuliah'=> 'required|max:255'
-            // 'tugas.*'=> 'required|max:255',
-            // 'media.*'=> 'required|max:255'
-
+        dd($request->all());
+        $DataKegiatan = $request -> validate([
+            'mata_kuliah'=> 'required|max:255',
+            'tugas'=>'required',
+            'tenggat' =>'required',
+            'media' =>'required',
+            'status' =>'required'
         ]);
-        // $DataKegiatan['user_id'] =auth()->id();
+        $DataKegiatan['user_id'] =auth()->id();
+         Kegiatan::create($DataKegiatan);
 
-
-        foreach ($request->inputs as $key => $value) {
-            Kegiatan::create($value);
-        }
-
-        return back();
+        // foreach ($request->inputs as $key => $value) {
+        //     // Kegiatan::create($value);
+        //     // request()->all();
+        // }
+        return back()->with('success', 'Keren Semua Data berhasil diinputkan!!!!');
     }
 
     /**

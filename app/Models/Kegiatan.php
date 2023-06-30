@@ -11,6 +11,7 @@ class Kegiatan extends Model
     protected $fillable = [
         'mata_kuliah',
         'tugas',
+        'tenggat',
         'media',
         'status',
         'user_id'

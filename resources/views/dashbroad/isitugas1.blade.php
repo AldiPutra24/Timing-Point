@@ -3,6 +3,11 @@
 @section('container')
 <div class="content_isitugas">
 <h2 class="mt-4">drop your assignment, here !</h2>
+        @if ($message = Session::get('success'))
+        <div class="alert alert-success alert-block">
+                <strong>{{ $message }}</strong>
+        </div>
+        @endif
       <div class="mt-5 mb-2 me-0">
         <div class="column">
           <button class="btn btn-sm btn-primary float-end" id="add-input">Tambah</button>
@@ -35,15 +40,40 @@
                             </div>
                         </td>
 
-                        <td><input type="text" class="form-control form-control-sm" name='inputs0mata_kuliah'></td>
-                        <td><input type="text" class="form-control form-control-sm" '></td>
-                        <td><input type="date" class="form-control form-control-sm" ></td>
-                        <td><input type="text" class="form-control form-control-sm" ></td>
-                        <td><select class="form-select"  id="status" onchange="changeColor(this)">
-                                <option value="red">Belum selesai</option>
-                                <option value="blue">Dalam proses</option>
-                                <option value="green">Selesai</option>
+                        <td><input type="text" class="form-control form-control-sm @error('mata_kuliah') is-invalid @enderror" name='mata_kuliah[]'></td>
+                        @error('mata_kuliah')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="text" class="form-control form-control-sm @error('tugas') is-invalid @enderror" name='tugas[]'></td>
+                        @error('tugas')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="date" class="form-control form-control-sm @error('tengat') is-invalid @enderror" name='tenggat[]'></td>
+                        @error('tenggat')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="text" class="form-control form-control-sm @error('media') is-invalid @enderror" name='media[]'></td>
+                        @error('media')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><select class="form-select @error('status') is-invalid @enderror"  id="status" onchange="changeColor(this)" name='status[]'>
+                                <option >Belum selesai</option>
+                                <option >Dalam proses</option>
+                                <option >Selesai</option>
                                 </select></td>
+                                @error('status')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror
                         <td><button onclick="validasidelete" class="btn btn-sm btn-danger delete-record float-end" data-id="${i}">Hapus</button></td>
 
                     </tr>
