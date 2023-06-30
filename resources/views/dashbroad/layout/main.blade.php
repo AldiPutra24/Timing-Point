@@ -32,8 +32,10 @@
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script src="{{ asset('js/harian.js') }}"></script>
     <script src="{{ asset('js/scriptdash.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script>
         // harian
     let dataRow = 0;
@@ -48,8 +50,6 @@
     }
 
     inputRow = (i) => {
-
-
     let tr = `  <tr id="input-tr-${i}">
                         <td><div class="form-check form-switch ms-2">
                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
@@ -57,18 +57,43 @@
                             </div>
                         </td>
 
-                        <td><input type="text" class="form-control form-control-sm" name='inputs${i}mata_kuliah'></td>
-                        <td><input type="text" class="form-control form-control-sm" '></td>
-                        <td><input type="date" class="form-control form-control-sm" ></td>
-                        <td><input type="text" class="form-control form-control-sm" ></td>
-                        <td><select class="form-select"  id="status" onchange="changeColor(this)">
-                                <option value="red">Belum selesai</option>
-                                <option value="blue">Dalam proses</option>
-                                <option value="green">Selesai</option>
+                        <td><input type="text" class="form-control form-control-sm @error('mata_kuliah') is-invalid @enderror" name='mata_kuliah[]'></td>
+                        @error('mata_kuliah')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="text" class="form-control form-control-sm @error('tugas') is-invalid @enderror" name='tugas[]'></td>
+                        @error('tugas')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="date" class="form-control form-control-sm @error('tengat') is-invalid @enderror" name='tenggat[]'></td>
+                        @error('tenggat')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><input type="text" class="form-control form-control-sm @error('media') is-invalid @enderror" name='media[]'></td>
+                        @error('media')
+                        <div class="invalid-feedback">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                        <td><select class="form-select @error('status') is-invalid @enderror"  id="status" onchange="changeColor(this)" name='status[]'>
+                                <option >Belum selesai</option>
+                                <option >Dalam proses</option>
+                                <option >Selesai</option>
                                 </select></td>
+                                @error('status')
+                                <div class="invalid-feedback">
+                                    {{ $message }}
+                                </div>
+                                @enderror
                         <td><button onclick="validasidelete" class="btn btn-sm btn-danger delete-record float-end" data-id="${i}">Hapus</button></td>
 
-                    </tr> `;
+                    </tr>`;
     $("#data").append(tr);
     };
 
