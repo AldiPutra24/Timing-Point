@@ -3,6 +3,7 @@
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\PostSugestController;
+use App\Http\Controllers\FacebookController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -59,6 +60,12 @@ Route::get('/setting', function () {
     return view('dashbroad.setting',[
         "title"=>'setting'
     ]);
+});
+
+//fb login
+Route::controller(FacebookController::class)->group(function(){
+    Route::get('auth/facebook', 'redirectToFacebook')->name('auth.facebook');
+    Route::get('auth/facebook/callback', 'handleFacebookCallback')->name('user');
 });
 
 Route::get('/register', [loginController::class, 'register'])->name('register');
