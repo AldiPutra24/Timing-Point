@@ -40,31 +40,31 @@
                             </div>
                         </td>
 
-                        <td><input type="text" class="form-control form-control-sm @error('mata_kuliah') is-invalid @enderror" name='mata_kuliah[]'></td>
+                        <td><input type="text" class="form-control form-control-sm @error('mata_kuliah') is-invalid @enderror" name='mata_kuliah'></td>
                         @error('mata_kuliah')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                         @enderror
-                        <td><input type="text" class="form-control form-control-sm @error('tugas') is-invalid @enderror" name='tugas[]'></td>
+                        <td><input type="text" class="form-control form-control-sm @error('tugas') is-invalid @enderror" name='tugas'></td>
                         @error('tugas')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                         @enderror
-                        <td><input type="date" class="form-control form-control-sm @error('tengat') is-invalid @enderror" name='tenggat[]'></td>
+                        <td><input type="date" class="form-control form-control-sm @error('tenggat') is-invalid @enderror" name='tenggat'></td>
                         @error('tenggat')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                         @enderror
-                        <td><input type="text" class="form-control form-control-sm @error('media') is-invalid @enderror" name='media[]'></td>
+                        <td><input type="text" class="form-control form-control-sm @error('media') is-invalid @enderror" name='media'></td>
                         @error('media')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>
                         @enderror
-                        <td><select class="form-select @error('status') is-invalid @enderror"  id="status" onchange="changeColor(this)" name='status[]'>
+                        <td><select class="form-select @error('status') is-invalid @enderror"  id="status" onchange="changeColor(this)" name='status'>
                                 <option >Belum selesai</option>
                                 <option >Dalam proses</option>
                                 <option >Selesai</option>
