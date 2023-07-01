@@ -5,9 +5,8 @@
     <form  action="{{ route('login') }}" method="POST">
         @csrf
         @if (session()->has('LoginEror'))
-        <div class="alert alert-danger alert-dismissable fade show" role="alert">
-            {{ session('LoginEror') }}
-            <button type="button" class="btn-close" data-bs-dismis="alert" aria-label="Close"></button>
+        <div>
+            <script>alert("You haven't registered yet, please register first!")</script>
         </div>
         @endif
 

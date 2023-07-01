@@ -8,12 +8,19 @@
 </head>
 <body>
     <button class="btn-close" onclick="history.back()"></i>⬅</button>
-    
+
         <div class="login-card">
             <img src="./img/logoR.jpg" />
             <h2>Sign Up</h2>
             <h3>Enter your credentials</h3>
             <form class="login-form" action="{{ route('register') }}" method="post">
+                @csrf
+                @if (session()->has('LoginEror'))
+                <div>
+                    <script>alert("You haven't registered yet, please register first!")</script>
+                </div>
+                @endif
+
                 @csrf
                 <input class="control  @error('name') is-invalid @enderror" type="text" id="user" name="name" placeholder="username"  value="{{ old('name') }}"/>
                 @error('name')

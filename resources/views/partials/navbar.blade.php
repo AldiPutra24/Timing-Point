@@ -30,6 +30,11 @@
     <h1>Login</h1>
     <form  action={{ route('login') }} method="POST">
         @csrf
+        @if (session()->has('LoginEror'))
+        <div>
+            <script>alert("You haven't registered yet, please register first!")</script>
+        </div>
+        @endif
       <label for="username">email:</label>
       <input type="text" id="username" name="loginemail" required><br><br>
       <label for="password">Password:</label>

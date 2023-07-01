@@ -43,10 +43,12 @@ class loginController extends Controller
             // $user=Auth::user();
             // $id=Auth::id();
             return redirect()->intended('dashbroad');
+        }else{
+            return redirect('register')->with('LoginEror', 'Login gagal!!!');
         }
-        return back()->with('LoginEror', 'Login gagal!!!');
 
     }
+
     public function logout(){
         Auth::logout();
         return view('welcome');
