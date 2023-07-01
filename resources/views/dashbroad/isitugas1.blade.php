@@ -4,8 +4,8 @@
 <div class="content_isitugas">
 <h2 class="mt-4">drop your assignment, here !</h2>
         @if ($message = Session::get('success'))
-        <div class="alert alert-success alert-block">
-                <strong>{{ $message }}</strong>
+        <div>
+            <script>alert("selamat semua data berhasil diinpitkan !!!!!!!!!")</script>
         </div>
         @endif
       <div class="mt-5 mb-2 me-0">
