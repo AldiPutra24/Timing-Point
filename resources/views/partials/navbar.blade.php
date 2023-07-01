@@ -30,7 +30,7 @@
     <h1>Login</h1>
     <form  action={{ route('login') }} method="POST">
         @csrf
-      <label for="username">Username:</label>
+      <label for="username">email:</label>
       <input type="text" id="username" name="loginemail" required><br><br>
       <label for="password">Password:</label>
       <input type="password" id="password" name="loginpassword" required><br><br>
