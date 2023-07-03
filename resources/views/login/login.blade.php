@@ -16,7 +16,7 @@
       <input type="password" id="password" name="loginpassword" required><br><br>
       <a href="#">Forgot Password?</a><br>
       <input id="sumbit" type="submit" value="Login">
-      <div class="link">Not a member? <a href="{{ route('register') }}">SignUp Here</a></div>
+      <div class="link">Not a member? <a href="{{ route('register') }}">Sign Up Here</a></div>
     </form>
   </div>
 
