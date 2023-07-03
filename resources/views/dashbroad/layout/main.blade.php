@@ -110,7 +110,7 @@
     // end harian
     </script>
     @yield('script')
-    @include('partials.footer')
+
   </body>
 
 </html>

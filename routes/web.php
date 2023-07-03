@@ -4,6 +4,7 @@ use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\PostSugestController;
 use App\Http\Controllers\FacebookController;
+use App\Http\Controllers\TugasController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -29,28 +30,6 @@ Route::get('/', function () {
         "title"=>'dashbroad']);
 });
 
-Route::get('/dashbroad', function () {
-    return view('dashbroad.dashbroad',[
-        "title"=>'dashbroad'
-    ]);
-});
-
-Route::get('/harian', function () {
-    return view('dashbroad.harian',[
-        "title"=>'harian'
-    ]);
-});
-Route::get('/harian-lanjut', function () {
-    return view('dashbroad.harian-lanjut',[
-        "title"=>'harian-lanjut'
-    ]);
-});
-
-Route::get('/isitugas', function () {
-    return view('dashbroad.isitugas1',[
-        "title"=>'isitugas'
-    ]);
-});
 Route::get('/notepad', function () {
     return view('dashbroad.notepad',[
         "title"=>'notepad'
@@ -67,14 +46,29 @@ Route::controller(FacebookController::class)->group(function(){
     Route::get('auth/facebook', 'redirectToFacebook')->name('auth.facebook');
     Route::get('auth/facebook/callback', 'handleFacebookCallback')->name('user');
 });
+//end fb login
 
+// login
 Route::get('/register', [loginController::class, 'register'])->name('register');
 Route::post('/register', [loginController::class, 'registerpost'])->name('register');
 Route::get('/login', [loginController::class, 'login'])->name('login');
 Route::post('/login', [loginController::class, 'loginpost'])->name('login');
 Route::post ('/logout', [loginController::class, 'logout'])->name('logout');
-Route::post ('/postSugest', [PostSugestController::class, 'sugestpost'])->name('PostSugest');
-Route::post ('/post', [KegiatanController::class, 'store']);
+// end logout
 
+//sugest
+Route::post ('/postSugest', [PostSugestController::class, 'sugestpost'])->name('PostSugest');
+//end sugest
+
+//kegiatan
+Route::post ('/post', [KegiatanController::class, 'store']);
+Route::get('/dashbroad',[KegiatanController::class,'index']);
+Route::get('/isitugas', [KegiatanController::class,'tampilisi']);
+//end kegiatan
+
+//harian
+Route::get('/harian', [TugasController::class,'index']);
+Route::get('/harian-lanjut',[TugasController::class,'indexlanjut']);
+// end harian
 
 // Route::get('/dashbroad',[loginController::class,'index']);

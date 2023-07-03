@@ -14,9 +14,14 @@ class KegiatanController extends Controller
      */
     public function index()
     {
-
+        $user = auth()->id();
+        $kegiatans = Kegiatan::where('user_id', $user)->get();
+        return view('dashbroad.dashbroad',compact('kegiatans'),["title"=>'dashbroad']);
     }
-
+    public function tampilisi()
+    {
+        return view('dashbroad.isitugas1',["title"=>'isitugas']);
+    }
     /**
      * Show the form for creating a new resource.
      */
