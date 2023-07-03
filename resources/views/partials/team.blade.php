@@ -2,7 +2,6 @@
     <div class="team" id="team">
         <div class="heading">
             <h1>OUR TEAM</h1>
-            <p>Bersatu kita teguh bercerai kita runtuh</p>
         </div>
         <div class="main">
             <div class="person" style="--color: #E1D4BB"  data-aos="fade-down">
@@ -13,7 +12,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>FRONTEND</h2>
                 <h3>Jessica Vega</h3>
                 <p>21.11.4356</p>
             </div>
@@ -26,7 +25,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>FRONTEND</h2>
                 <h3>Aldi Putra</h3>
                 <p>21.11.4369</p>
             </div>
@@ -39,7 +38,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>BACKEND</h2>
                 <h3>Fahrul Fuguh</h3>
                 <p>21.11.4331</p>
             </div>
@@ -52,7 +51,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>BACKEND</h2>
                 <h3>Jonathan Adi</h3>
                 <p>21.11.4356</p>
             </div>
@@ -67,7 +66,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>DESAIN UI/UX</h2>
                 <h3>Gatan</h3>
                 <p>21.11.4351</p>
             </div>
@@ -80,7 +79,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>DESAIN UI/UX</h2>
                 <h3>Jundi Robbani</h3>
                 <p>21.11.4363</p>
             </div>
@@ -93,7 +92,7 @@
                     </div>
                 </div>
                 <div class="divider"></div>
-                <h2>UI/UX</h2>
+                <h2>DESAIN UI/UX</h2>
                 <h3>Ricardo Umbu</h3>
                 <p>21.11.4380</p>
             </div>

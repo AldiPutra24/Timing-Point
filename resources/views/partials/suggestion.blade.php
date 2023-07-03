@@ -4,7 +4,7 @@
           <div class="suggestion-box">
             <div class="box">
               <i class="fa-solid fa-envelope"></i>
-              <h1>suggestion</h1>
+              <h1>SUGGESTION</h1>
               <p>Your Feedback Matters: Share Your Suggestions and Critiques</p>
             </div>
             <div class="form-suggestion">

@@ -560,7 +560,6 @@
 
   .suggestion .suggestion-box .form-suggestion form table tr td input:focus,
   .suggestion .suggestion-box .form-suggestion form table tr td textarea:focus {
-    /* background-color: var(--secondary-color); */
     background-color: var(--color6);
   }
 
@@ -613,7 +612,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-top: -75px;
+    margin-top: -55px;
 }
 
 .team .main2 {
@@ -676,6 +675,7 @@
 .team .main .person h2,.team .main2 .person h2 {
     color: var(--text-color);
     margin: 16px 0 0 0;
+    font-size: 23px;
     font-family: 'Karma', serif;
 }
 

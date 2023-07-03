@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Signup 2</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="{{ asset('css/stylesign.css') }}" />
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}">
 </head>
