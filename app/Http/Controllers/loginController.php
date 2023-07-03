@@ -30,7 +30,8 @@ class loginController extends Controller
         return redirect('/');
     }
     public function login(){
-        return view('dashbroad.dashbroad');
+        return view('dashbroad.dashbroad',
+        ["title"=>'setting']);
     }
 
     public function loginpost(Request $request){

@@ -14,7 +14,7 @@ class KegiatanController extends Controller
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -39,7 +39,6 @@ class KegiatanController extends Controller
             'status' =>'required'
         ]);
         $DataKegiatan['user_id'] = auth()->id();
-        // return $DataKegiatan;
         DB::table('kegiatans')->insert($DataKegiatan);
 
         return back()->with('success', 'Keren Semua Data berhasil diinputkan!!!!');
@@ -50,7 +49,9 @@ class KegiatanController extends Controller
      */
     public function show(Kegiatan $kegiatan)
     {
-        //
+        $users = DB::table('users')->get();
+
+        return view('user.index', ['users' => $users]);
     }
 
     /**
