@@ -524,14 +524,12 @@
 
   .suggestion .suggestion-box .box h1 {
     font-weight: 800;
-    /* color: var(--text-color); */
     color: var(--color5);
     font-family: font2;
     margin-bottom: 10px;
   }
 
   .suggestion .suggestion-box .box p {
-    /* color: var(--text-color-opacity); */
     color: var(--color6);
     font-family: font3;
     font-size: 20px;
