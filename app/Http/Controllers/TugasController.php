@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use App\Models\tugas;
 use Illuminate\Http\Request;
 
@@ -19,7 +20,7 @@ class TugasController extends Controller
     public function indexlanjut()
     {
         return view('dashbroad.harian-lanjut',[
-            "title"=>'harian'
+            "title"=>'harian',"hari"=>'wednesday'
         ]);
     }
 
@@ -36,7 +37,16 @@ class TugasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $DataKegiatan = $request -> validate([
+        //     'tugas'=> 'required|max:255'
+        // ]);
+        // dd($request->all());
+        // $DataKegiatan['user_id'] = auth()->id();
+        // // $DataKegiatan['hari'] = 'rabu';
+
+        // DB::table('tugas')->insert($DataKegiatan);
+        // return $DataKegiatan;
+        // // return back()->with('success', 'Keren Semua Data berhasil diinputkan!!!!');
     }
 
     /**
