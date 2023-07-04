@@ -581,7 +581,6 @@
 
   /* team */
   @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
-
    /* team */
 
    .team{
@@ -698,10 +697,7 @@
 .team .main .person .container:hover img,.team .main2 .person .container:hover img {
     transform: translateY(0) scale(1.3);
 }
-
-
 /* Team */
-
 
   .footer {
     background-color: var(--color2);

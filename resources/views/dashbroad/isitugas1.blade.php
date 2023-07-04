@@ -5,7 +5,7 @@
 <h2 class="mt-4">drop your assignment, here !</h2>
         @if ($message = Session::get('success'))
         <div>
-            <script>alert("selamat semua data berhasil diinpitkan !!!!!!!!!")</script>
+            <script>alert("Data berhasil diinputkan!")</script>
         </div>
         @endif
       <div class="mt-5 mb-2 me-0">
@@ -81,7 +81,7 @@
             </table>
             <div class="mt-1 mb-2 me-0">
                 <div class="column">
-                  <button class="btn btn-sm btn-primary float-end" type="submit">submit all</button>
+                  <button class="btn btn-sm btn-primary float-end" type="submit">Submit All</button>
                   <br/>
                 </div>
               </div>
@@ -92,4 +92,3 @@
 </div>
 
 @endsection
-

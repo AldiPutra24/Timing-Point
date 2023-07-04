@@ -9,32 +9,32 @@
     <div class="main-1">
       <div class="list-item-1 {{ ($title === "dashbroad" ? 'active': '') }}">
         <a href="/dashbroad">
-            <i class="fa-solid fa-gear fa-2xl"></i>
+          <!-- <i class="fa-solid fa-gear fa-lg"></i> -->
           <span class="description-1">Dashbroad</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "harian" ? 'active': '') }}">
         <a href="/harian">
-            <i class="fa-solid fa-gear fa-lg"></i>
-          <span class="description-1">Add tugas harian</span>
+            <!-- <i class="fa-solid fa-gear fa-lg"></i> -->
+          <span class="description-1">To-Do List</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "isitugas" ? 'active': '') }}">
         <a href="/isitugas">
-            <i class="fa-solid fa-gear fa-lg"></i>
-          <span class="description-1">tambah kegiatan harian</span>
+            <!-- <i class="fa-solid fa-gear fa-lg"></i> -->
+          <span class="description-1">Recap Of Duty</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "notepad" ? 'active': '') }}">
         <a href="notepad">
-            <i class="fa-solid fa-gear fa-lg"></i>
-          <span class="description-1">notepad</span>
+            <!-- <i class="fa-solid fa-gear fa-lg"></i> -->
+          <span class="description-1">Sticky Note</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "setting" ? 'active': '') }}">
         <a href="setting">
-            <i class="fa-solid fa-gear fa-lg"></i>
-          <span class="description-1">setting</span>
+            <!-- <i class="fa-solid fa-gear fa-lg"></i> -->
+          <span class="description-1">Setting</span>
         </a>
       </div>
     </div>

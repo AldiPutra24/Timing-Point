@@ -7,43 +7,43 @@
                 <article>
                     <img src="{{ asset('assets/img harian/image11.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/monday.html">Monday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/monday.html">Monday</a></h2>
                     </div>
                 </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image22.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/tuesday.html">Tuesday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/tuesday.html">Tuesday</a></h2>
                     </div>
                 </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image33.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="/harian-lanjut">Wednesday !</a></h2>
+                        <h2 class="btnn"><a href="/harian-lanjut">Wednesday</a></h2>
                     </div>
                     </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image44.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/thursday.html">Thursday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/thursday.html">Thursday</a></h2>
                     </div>
                     </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image55.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/friday.html">friday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/friday.html">Friday</a></h2>
                     </div>
                     </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image6.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/saturday.html">Saturday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/saturday.html">Saturday</a></h2>
                     </div>
                     </article>
                 <article>
                     <img src="{{ asset('assets/img harian/image77.png') }}" width="200px" height="225px">
                     <div class="content">
-                        <h2 class="btnn"><a href="../gabungan/sunday.html">Sunday !</a></h2>
+                        <h2 class="btnn"><a href="../gabungan/sunday.html">Sunday</a></h2>
                         </div>
                     </article>
                 <article>

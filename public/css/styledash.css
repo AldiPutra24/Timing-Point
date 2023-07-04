@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playfair:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Karma&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
+
 @font-face {
     font-family: fontku;
     src: url(CandyBeans.otf);
@@ -33,10 +34,11 @@
 .sidebar-1 .description-header-1 {
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 16px;
     text-align: center;
     color: #fff;
+    font-family: 'Playfair', serif;
 }
 .sidebar-1.hide .description-header-1 {
     display: none;
@@ -68,7 +70,19 @@
     border-bottom-left-radius: 20px;
     transition: all ease-in 0.2s;
     width: 200%;
+    margin-top: 10px;
+    font-family: 'Playfair', serif;
 }
+
+.sidebar-1 .main-1{
+    margin-top: 5px;
+    font-family: 'Karma', serif;
+}
+
+.fa-solid.fa-gear.fa-lg::before{
+    margin-bottom: -3px;
+}
+
 .sidebar-1 .main-1 .list-item-1.active {
     background: #286d77;
 }
@@ -195,6 +209,10 @@
 .navbar nav {
     width: 100%;
 }
+
+.button .logout{
+    margin-left: 10px;
+}
 /* content dashbroad */
 .content_dashbroad {
     display: flex;
@@ -269,6 +287,7 @@
     margin: 50px;
     align-items: center;
     grid-gap: 45px;
+    /* width: min-content; */
 }
 
 .content_harian img {
@@ -289,9 +308,11 @@
     width: 100%;
 }
 
-.content {
+.content .btnn{
     cursor: progress;
-    font-family: "Delius Swash Caps", "cursive";
+    font-family: 'Delius Swash Caps', 'cursive';
+    margin-top: 4px;
+    font-size: 22px;
     color: #7f5539;
 }
 
@@ -495,12 +516,18 @@ table.table.table-sm.table-bordered {
     border: 1px solid #ddb892;
 }
 
+.mt-5.mb-2.me-0 .column{
+    margin-top: -20px;
+}
+
 .row {
     background-color: #fff5;
     backdrop-filter: blur(7px);
     box-shadow: 0 0.4rem 0.8rem #0005;
     border-radius: 0.7rem;
     overflow: hidden;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 button.btn.btn-sm.btn-danger.delete-record.float-end {
@@ -518,11 +545,9 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
 #data {
     font-family: "Karma", serif;
 }
-
 /* end isi tugas */
 
 /* notepad */
-
 .container_notepad {
     display: flex;
     height: 100%;
