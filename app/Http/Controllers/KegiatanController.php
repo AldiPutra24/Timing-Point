@@ -14,8 +14,8 @@ class KegiatanController extends Controller
      */
     public function index()
     {
-        $user = auth()->id();
-        $kegiatans = Kegiatan::where('user_id', $user)->get();
+        $user_id = auth()->id();
+        $kegiatans = Kegiatan::where('user_id', $user_id)->get();
         return view('dashbroad.dashbroad',compact('kegiatans'),["title"=>'dashbroad']);
     }
     public function tampilisi()
@@ -45,7 +45,6 @@ class KegiatanController extends Controller
         ]);
         $DataKegiatan['user_id'] = auth()->id();
         DB::table('kegiatans')->insert($DataKegiatan);
-
         return back()->with('success', 'Keren Semua Data berhasil diinputkan!!!!');
     }
 

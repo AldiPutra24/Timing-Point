@@ -69,6 +69,5 @@ Route::get('/isitugas', [KegiatanController::class,'tampilisi']);
 //harian
 Route::get('/harian', [TugasController::class,'index']);
 Route::get('/harian-lanjut',[TugasController::class,'indexlanjut']);
+Route::post ('/postTugas', [TugasController::class, 'store']);
 // end harian
-
-// Route::get('/dashbroad',[loginController::class,'index']);
