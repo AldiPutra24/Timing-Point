@@ -47,7 +47,7 @@ function UpdateClock() {
         "April",
         "Mei",
         "Juni",
-        "July",
+        "Juli",
         "Agustus",
         "September",
         "Oktober",
@@ -56,11 +56,11 @@ function UpdateClock() {
     ];
     var weeks = [
         "Minggu",
-        "senin",
-        "selasa",
+        "Senin",
+        "Selasa",
         "Rabu",
         "Kamis",
-        "Jum'at",
+        "Jumat",
         "Sabtu",
     ];
     var ids = [
@@ -91,5 +91,3 @@ function initClock() {
     window.setInterval("UpdateClock()", 1);
 }
 // end dashbroad
-
-

@@ -19,7 +19,7 @@
           <a href="#">Terms Of Services</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Blog</a>
-          <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop"" target="_blank">Cookies Setting</a>
+          <a href="https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop" target="_blank">Cookies Setting</a>
         </div>
       </div>
     </div>
