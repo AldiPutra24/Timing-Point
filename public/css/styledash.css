@@ -279,7 +279,13 @@
     justify-content: space-between;
 }
 
+.content_harian article{
+    width: 200px;
+}
+
 .content_harian h1 {
+    margin-top: 22px;
+    margin-bottom: -10px;
     text-align: center;
     font-family: "Playfair", serif;
     color: #7f5539;
@@ -292,7 +298,9 @@
     grid-template-columns: repeat(4, 1fr);
     margin: 50px;
     align-items: center;
-    grid-gap: 45px;
+    column-gap: 0px;
+    row-gap: 43px;
+    margin-left: 110px;
     /* width: min-content; */
 }
 
@@ -314,6 +322,10 @@
     width: 100%;
 }
 
+.grid .semangat{
+    margin-top: 5px;
+}
+
 .content .btnn {
     cursor: progress;
     font-family: "Delius Swash Caps", "cursive";
@@ -322,8 +334,8 @@
     color: #7f5539;
 }
 
-.content2 {
-    font-size: 15px;
+.content2 h2{
+    font-size: 14px;
     font-family: "Delius Swash Caps", "cursive";
 }
 
@@ -561,9 +573,9 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     /* flex-direction: row; */
 }
 
-.notes * {
+.notes {
     font-family: sans-serif;
-
+    display: flex;
 }
 
 .notes_sidebar {
@@ -636,7 +648,7 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     border: none;
     outline: none;
     width: 100%;
-    background-color: #f3eae2;
+    background-color: transparent;
 }
 
 .notes_title {
