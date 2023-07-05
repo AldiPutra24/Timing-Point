@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playfair:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
 
 @font-face {
@@ -38,7 +38,7 @@
     line-height: 16px;
     text-align: center;
     color: #fff;
-    font-family: 'Playfair', serif;
+    font-family: "Playfair", serif;
 }
 .sidebar-1.hide .description-header-1 {
     display: none;
@@ -71,15 +71,15 @@
     transition: all ease-in 0.2s;
     width: 200%;
     margin-top: 10px;
-    font-family: 'Playfair', serif;
+    font-family: "Playfair", serif;
 }
 
-.sidebar-1 .main-1{
+.sidebar-1 .main-1 {
     margin-top: 5px;
-    font-family: 'Karma', serif;
+    font-family: "Karma", serif;
 }
 
-.fa-solid.fa-gear.fa-lg::before{
+.fa-solid.fa-gear.fa-lg::before {
     margin-bottom: -3px;
 }
 
@@ -210,8 +210,12 @@
     width: 100%;
 }
 
-.button .logout{
+.button .logout {
     margin-left: 10px;
+}
+
+.navbar .logout{
+    align-items: center;
 }
 /* content dashbroad */
 .content_dashbroad {
@@ -222,23 +226,22 @@
 /* jam widget */
 .container-main-1 .datetime-1 {
     color: #000;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #fff8f2;
     font-family: "Segoe UI", sans-serif;
     width: 370px;
     height: fit-content;
     padding: 15px 10px;
-    border: 3px solid #286d77;
-    border-radius: 5px;
+    border: 2px solid #9c6644;
+    border-radius: 50px;
     transition: 0.5s;
     transition-property: background, box-shadow;
     float:right;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 15px 10px 15px 0;
+    height: 108px;
 }
 .container-main-1 .datetime-1:hover {
-    background: #2e94e3;
-    box-shadow: 0 0 30px #2e94e3;
+    background: #e6ccb2;
+    box-shadow: 0 0 30px #ddb892;
 }
 .container-main-1 .date-1 {
     font-size: 20px;
@@ -247,7 +250,7 @@
     letter-spacing: 3px;
 }
 .container-main-1 .time-1 {
-    font-size: 60px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,13 +263,12 @@
     letter-spacing: 3px;
 }
 .container-main-1 .time-1 span:last-child {
-    background: #2e94e3;
+    background: #ddb892;
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 10px;
     padding: 0 5px;
-    border-radius: 3px;
+    border-radius: 50px;
 }
 /* end content dashbroad */
 
@@ -312,9 +314,9 @@
     width: 100%;
 }
 
-.content .btnn{
+.content .btnn {
     cursor: progress;
-    font-family: 'Delius Swash Caps', 'cursive';
+    font-family: "Delius Swash Caps", "cursive";
     margin-top: 4px;
     font-size: 22px;
     color: #7f5539;
@@ -520,7 +522,7 @@ table.table.table-sm.table-bordered {
     border: 1px solid #ddb892;
 }
 
-.mt-5.mb-2.me-0 .column{
+.mt-5.mb-2.me-0 .column {
     margin-top: -20px;
 }
 
@@ -532,6 +534,7 @@ table.table.table-sm.table-bordered {
     overflow: hidden;
     margin-left: 6px;
     margin-right: 6px;
+    margin-bottom: 12px;
 }
 
 button.btn.btn-sm.btn-danger.delete-record.float-end {
@@ -555,11 +558,12 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
 .container_notepad {
     display: flex;
     height: 100%;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
+
 .notes * {
     font-family: sans-serif;
-    
+
 }
 
 .notes_sidebar {
@@ -652,6 +656,13 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
 
 /* end notepad */
 
+/* setting */
+.container_setting {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+/* end setting */
 * {
     margin: 0;
     padding: 0;

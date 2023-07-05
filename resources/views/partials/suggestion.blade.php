@@ -39,7 +39,7 @@
                   </tr>
                   <tr>
                     <td colspan="2">
-                      <textarea class="control  @error('Pesan') is-invalid @enderror" name="Pesan" cols="30" rows="10" placeholder="Pesan..." required style="width: 100%"></textarea>
+                      <textarea class="control  @error('Pesan') is-invalid @enderror" name="Pesan" cols="30" rows="10" placeholder="Message..." required style="width: 100%"></textarea>
                       @error('Pesan')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -49,7 +49,7 @@
                   </tr>
                   <tr>
                     <td colspan="2">
-                      <button type="submit" >Kirim</button>
+                      <button type="submit">SEND</button>
                     </td>
                   </tr>
                 </table>

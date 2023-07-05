@@ -2,10 +2,10 @@
 
 @section('container')
 <div class="content_dashbroad">
-    <h1>halo Fahrul</h1>
+    <h1>halo......{{ Auth::user()->name }}</h1>
   <div class="datetime-1">
     <div class="date-1">
-      <span id="dayname">day</span>,
+      <span id="dayname">Day</span>,
       <span id="month">month</span>
       <span id="daynum">00</span>,
       <span id="year">year</span>

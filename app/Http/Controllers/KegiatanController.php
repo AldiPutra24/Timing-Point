@@ -45,7 +45,7 @@ class KegiatanController extends Controller
         ]);
         $DataKegiatan['user_id'] = auth()->id();
         DB::table('kegiatans')->insert($DataKegiatan);
-        return back()->with('success', 'Keren Semua Data berhasil diinputkan!!!!');
+        return back()->with('success','keren');
     }
 
     /**
@@ -53,9 +53,7 @@ class KegiatanController extends Controller
      */
     public function show(Kegiatan $kegiatan)
     {
-        $users = DB::table('users')->get();
 
-        return view('user.index', ['users' => $users]);
     }
 
     /**

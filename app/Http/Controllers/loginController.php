@@ -17,7 +17,7 @@ class loginController extends Controller
 
         $validatedData = $request -> validate([
             'name'=> 'required|max:255',
-            'email'=> 'required|max:255|unique:users',
+            'email'=> 'required|max:255|unique:users|regex:/(.+)@(.+)\.(.+)/i',
             'birth_date'=> 'required',
             'nomor_telepon'=> 'required',
             'password'=> 'required'
