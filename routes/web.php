@@ -71,3 +71,7 @@ Route::get('/harian', [TugasController::class,'index']);
 Route::get('/harian-lanjut',[TugasController::class,'indexlanjut']);
 Route::post ('/postTugas', [TugasController::class, 'store']);
 // end harian
+
+//route ubah profill
+Route::get('/setting', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+Route::put('/setting', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');

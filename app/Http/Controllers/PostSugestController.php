@@ -12,12 +12,12 @@ class PostSugestController extends Controller
         $validatedSugets = $request -> validate([
             'First_Name'=> 'required|max:255',
             'Last_Name'=> 'required|max:255',
-            'Email'=> 'required',
+            'Email'=> 'required|regex:/(.+)@(.+)\.(.+)/i',
             'Pesan'=> 'required'
         ]);
 
-        
+
         Post_sugetion::create($validatedSugets);
-        return redirect('/');
+        return redirect('/')->with('success','keren');
     }
 }

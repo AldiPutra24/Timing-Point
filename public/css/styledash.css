@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Playfair:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair&display=swap");
 
 @font-face {
@@ -38,7 +38,7 @@
     line-height: 16px;
     text-align: center;
     color: #fff;
-    font-family: 'Playfair', serif;
+    font-family: "Playfair", serif;
 }
 .sidebar-1.hide .description-header-1 {
     display: none;
@@ -71,15 +71,15 @@
     transition: all ease-in 0.2s;
     width: 200%;
     margin-top: 10px;
-    font-family: 'Playfair', serif;
+    font-family: "Playfair", serif;
 }
 
-.sidebar-1 .main-1{
+.sidebar-1 .main-1 {
     margin-top: 5px;
-    font-family: 'Karma', serif;
+    font-family: "Karma", serif;
 }
 
-.fa-solid.fa-gear.fa-lg::before{
+.fa-solid.fa-gear.fa-lg::before {
     margin-bottom: -3px;
 }
 
@@ -210,7 +210,7 @@
     width: 100%;
 }
 
-.button .logout{
+.button .logout {
     margin-left: 10px;
 }
 /* content dashbroad */
@@ -231,7 +231,7 @@
     border-radius: 5px;
     transition: 0.5s;
     transition-property: background, box-shadow;
-    float:right;
+    float: right;
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 10px;
@@ -312,9 +312,9 @@
     width: 100%;
 }
 
-.content .btnn{
+.content .btnn {
     cursor: progress;
-    font-family: 'Delius Swash Caps', 'cursive';
+    font-family: "Delius Swash Caps", "cursive";
     margin-top: 4px;
     font-size: 22px;
     color: #7f5539;
@@ -520,7 +520,7 @@ table.table.table-sm.table-bordered {
     border: 1px solid #ddb892;
 }
 
-.mt-5.mb-2.me-0 .column{
+.mt-5.mb-2.me-0 .column {
     margin-top: -20px;
 }
 
@@ -532,6 +532,7 @@ table.table.table-sm.table-bordered {
     overflow: hidden;
     margin-left: 6px;
     margin-right: 6px;
+    margin-bottom: 12px;
 }
 
 button.btn.btn-sm.btn-danger.delete-record.float-end {
@@ -559,7 +560,6 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
 }
 .notes * {
     font-family: sans-serif;
-
 }
 
 .notes_sidebar {
@@ -652,6 +652,13 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
 
 /* end notepad */
 
+/* setting */
+.container_setting {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+/* end setting */
 * {
     margin: 0;
     padding: 0;

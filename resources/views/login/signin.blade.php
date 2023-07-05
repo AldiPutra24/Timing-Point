@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}">
 </head>
 <body>
-    <button class="btn-close" onclick="history.back()"></i>⬅</button>
+    <button class="btn-close"> <a href="/" style="text-decoration:none;color: #5a3c28" >⬅</button></a>
 
         <div class="login-card">
             <img src="./img/logoR.jpg" />
@@ -21,7 +21,6 @@
                 </div>
                 @endif
 
-                @csrf
                 <input class="control  @error('name') is-invalid @enderror" type="text" id="user" name="name" placeholder="username"  value="{{ old('name') }}"/>
                 @error('name')
                 <div class="invalid-feedback">

@@ -52,7 +52,7 @@
               Stay on Schedule.
             </p>
           </div>
-
+          
           <div class="hero-img">
             <img src="{{ asset('assets/img/1.jpg') }}" alt="unsplash.com" />
             <img src="{{ asset('assets/img/2.jpg') }}" alt="unsplash.com" />
