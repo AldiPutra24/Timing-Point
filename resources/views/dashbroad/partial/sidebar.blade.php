@@ -9,7 +9,7 @@
     <div class="main-1">
       <div class="list-item-1 {{ ($title === "dashbroad" ? 'active': '') }}">
         <a href="/dashbroad">
-          <span class="description-1">Dashbroad</span>
+          <span class="description-1">Dashboard</span>
         </a>
       </div>
       <div class="list-item-1 {{ ($title === "harian" ? 'active': '') }}">

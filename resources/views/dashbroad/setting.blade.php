@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="birth_date" class="col-md-4 col-form-label text-md-right">{{ __('Tanggal ulan tahun') }}</label>
+                                <label for="birth_date" class="col-md-4 col-form-label text-md-right">{{ __('Birthday Date') }}</label>
                                 <div class="col-md-6">
                                     <input id="birth_date" type="date" class="form-control @error('email') is-invalid @enderror" name="birth_date" value="{{ old('birth_date') ?? $user->birth_date }}" required autocomplete="birth_date">
                                     @error('birth_date')

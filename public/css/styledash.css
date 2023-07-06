@@ -71,7 +71,7 @@
     transition: all ease-in 0.2s;
     width: 200%;
     margin-top: 10px;
-    font-family: "Playfair", serif;
+    /* font-family: "Playfair", serif; */
 }
 
 .sidebar-1 .main-1 {
@@ -114,11 +114,17 @@
     display: flex;
     flex-direction: column;
 }
+
+.main-content .navbar .logout{
+    margin-left: 1155px;
+    position: fixed;
+}
+
 #account-button {
     width: 32px;
     overflow: hidden;
     float: right;
-    margin-top: 1%;
+    margin-top: 6px;
     /* display: none; */
 }
 #account-button i {
@@ -223,21 +229,27 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.content_dashbroad h1{
+    font-family: "Playfair", serif;
+    margin: 10px 0px 0px 20px;
+}
+
 /* jam widget */
 .container-main-1 .datetime-1 {
     color: #000;
     background-color: #fff8f2;
-    font-family: "Segoe UI", sans-serif;
-    width: 370px;
+    font-family: "Playfair", serif;
+    width: 325px;
     height: fit-content;
     padding: 15px 10px;
     border: 2px solid #9c6644;
     border-radius: 50px;
     transition: 0.5s;
     transition-property: background, box-shadow;
-    float:right;
+    float: right;
     margin: 15px 10px 15px 0;
-    height: 108px;
+    height: 80px;
 }
 .container-main-1 .datetime-1:hover {
     background: #e6ccb2;
@@ -248,12 +260,14 @@
     font-weight: 600;
     text-align: center;
     letter-spacing: 3px;
+    margin-top: -8px;
 }
 .container-main-1 .time-1 {
-    font-size: 35px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -8px;
 }
 .container-main-1 .time-1 span:not(:last-child) {
     position: relative;
@@ -301,7 +315,6 @@
     column-gap: 0px;
     row-gap: 43px;
     margin-left: 110px;
-    /* width: min-content; */
 }
 
 .content_harian img {
@@ -674,6 +687,16 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     height: 100%;
     flex-direction: column;
 }
+
+.form-group.row.mb-0 {
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    align-items: center;
+    margin-left: 250px;
+    margin-top: 15px;
+}
+
 /* end setting */
 * {
     margin: 0;
