@@ -17,10 +17,49 @@ class TugasController extends Controller
             "title"=>'harian'
         ]);
     }
-    public function indexlanjut()
+    public function indexSenin()
     {
         return view('dashbroad.harian-lanjut',[
-            "title"=>'harian',"hari"=>'wednesday'
+            "title"=>'harian',"hari"=>'Monday'
+        ]);
+    }
+    public function indexSelasa()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Tuesday'
+        ]);
+    }
+    public function indexRabu()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Wednesday'
+        ]);
+    }
+    public function indexKamis()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Thursday'
+        ]);
+    }
+
+    public function indexJumat()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Friday'
+        ]);
+    }
+
+    public function indexSabtu()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Saturday'
+        ]);
+    }
+
+    public function indexMinggu()
+    {
+        return view('dashbroad.harian-lanjut',[
+            "title"=>'harian',"hari"=>'Sunday'
         ]);
     }
 

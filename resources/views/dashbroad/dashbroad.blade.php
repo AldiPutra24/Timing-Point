@@ -44,5 +44,5 @@
                     <td>{{ $k['tenggat'] }}</td>
                     <td>{{ $k['media'] }}</td>
                     <td>{{ $k['status'] }}</td>
-                    @endforeach
+            @endforeach
 @endsection

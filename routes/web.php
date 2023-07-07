@@ -68,7 +68,13 @@ Route::get('/isitugas', [KegiatanController::class,'tampilisi']);
 
 //harian
 Route::get('/harian', [TugasController::class,'index']);
-Route::get('/harian-lanjut',[TugasController::class,'indexlanjut']);
+Route::get('/harian-senin',[TugasController::class,'indexSenin']);
+Route::get('/harian-selasa',[TugasController::class,'indexSelasa']);
+Route::get('/harian-rabu',[TugasController::class,'indexRabu']);
+Route::get('/harian-kamis',[TugasController::class,'indexKamis']);
+Route::get('/harian-jumat',[TugasController::class,'indexJumat']);
+Route::get('/harian-sabtu',[TugasController::class,'indexSabtu']);
+Route::get('/harian-minggu',[TugasController::class,'indexMinggu']);
 Route::post ('/postTugas', [TugasController::class, 'store']);
 // end harian
 
