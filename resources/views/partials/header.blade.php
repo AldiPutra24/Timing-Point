@@ -69,17 +69,14 @@
                 <div class="box">
                   <h3>Easy Task Creation</h3>
                   <h1 data-aos="zoom-in" data-aos-duration="1000">Quickly create tasks with a title, description, due date, and priority level.</h1>
-                  <button>Details</button>
                 </div>
                 <div class="box">
                   <h3>Reminders and Notifications</h3>
                   <h1 data-aos="zoom-in" data-aos-duration="1000">Stay on track with reminders and notifications for upcoming deadlines.</h1>
-                  <button>Details</button>
                 </div>
                 <div class="box">
                   <h3>Progress Tracking</h3>
                   <h1 data-aos="zoom-in" data-aos-duration="1000"> Monitor your progress and mark tasks as completed to stay motivated.</h1>
-                  <button>Details</button>
                 </div>
               </div>
             </div>
