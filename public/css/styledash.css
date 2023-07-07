@@ -396,6 +396,7 @@
     width: 75%;
     outline: none;
     padding: 8px;
+    margin-right: -5px;
     border: 1px solid lightgray;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -438,7 +439,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: auto;
+    height: 55px;
     border-radius: 2px;
     padding: 1rem;
     color: #454545;
@@ -688,16 +689,25 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     flex-direction: column;
 }
 
+.container_setting .card-header{
+    font-weight: bold;
+    font-size: 26px;
+    font-family:"Playfair", serif;
+    border: transparent;
+    background-color: transparent;
+    margin: 10px 0px 10px 0px;
+}
+
 .form-group.row.mb-0 {
     background-color: transparent;
     border-radius: 0px;
     box-shadow: none;
     align-items: center;
     margin-left: 250px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
-
 /* end setting */
+
 * {
     margin: 0;
     padding: 0;
