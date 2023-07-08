@@ -655,7 +655,7 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     flex-direction: column;
     padding: 2em 3em;
     flex-grow: 1;
-    height: 100vh;
+    height: 90vh;
 }
 
 .notes_title,
@@ -664,7 +664,8 @@ button.btn.btn-sm.btn-danger.delete-record.float-end {
     outline: none;
     width: 100%;
     background-color: transparent;
-    overflow: hidden;
+    overflow: auto;
+    width: 690px;
 }
 
 .notes_title {
