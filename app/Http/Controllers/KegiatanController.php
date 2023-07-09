@@ -15,12 +15,17 @@ class KegiatanController extends Controller
     public function index()
     {
         $user_id = auth()->id();
-        $kegiatans = Kegiatan::where('user_id', $user_id)->get();
+        $kegiatans = Kegiatan::where('user_id', $user_id)->where(function($query) {
+            $query->where('status', 'Dalam proses')
+                ->orWhere('status', 'Belum selesai');
+        })->get();
         return view('dashbroad.dashbroad',compact('kegiatans'),["title"=>'dashbroad']);
     }
     public function tampilisi()
     {
-        return view('dashbroad.isitugas1',["title"=>'isitugas']);
+        $user_id = auth()->id();
+        $kegiatans = Kegiatan::where('user_id', $user_id)->get();
+        return view('dashbroad.isitugas1',compact('kegiatans'),["title"=>'isitugas']);
     }
     /**
      * Show the form for creating a new resource.
@@ -77,6 +82,10 @@ class KegiatanController extends Controller
      */
     public function destroy(Kegiatan $kegiatan)
     {
-        //
+        $kegiatan->delete();
+        return back()->with('hapus','Data telah dihapus.');
+
+            // Kegiatan::destroy($id);
+            // return back()->with('success','Data telah dihapus.');
     }
 }

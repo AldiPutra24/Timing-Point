@@ -8,6 +8,11 @@
             <script>alert("Data berhasil diinputkan!")</script>
         </div>
         @endif
+        @if ($message = Session::get('hapus'))
+        <div>
+            <script>alert("Data berhasil dihapus!")</script>
+        </div>
+        @endif
       <div class="mt-5 mb-2 me-0">
         <div class="column">
           <button class="btn btn-sm btn-primary float-end" id="add-input">Tambah</button>
@@ -89,6 +94,39 @@
           </div>
         </div>
     </div>
+
+    <h1>List Tugas..</h1>
+    <div class="row">
+        <div class="column">
+          <div class="tabel-responsive">
+            <table class="table table-sm table-bordered">
+              <thead class="head_table" text-align="center">
+                <tr>
+                  <th>Mata Kuliah</th>
+                  <th>Tugas</th>
+                  <th>Tenggat</th>
+                  <th>Media Pengumpulan</th>
+                  <th>Status</th>
+                  <th>del</th>
+                </tr>
+              </thead>
+              @foreach ($kegiatans as $k)
+                <tbody id="data">
+                    <tr id="input-tr-0">
+                        <td>{{ $k['mata_kuliah'] }}</td>
+                        <td>{{ $k['tugas'] }}</td>
+                        <td>{{ $k['tenggat'] }}</td>
+                        <td>{{ $k['media'] }}</td>
+                        <td>{{ $k['status'] }}</td>
+                        <td>
+                            <form action={{ route('kegiatan.destroy', $k->id) }} method="POST">
+                                @csrf
+                                @method('DELETE')
+                            <button type="submit" onclick="return confirm('Sure Want Delete?')" class="btn btn-sm btn-danger delete-record float-end" value="Delete">Hapus</button>
+                            </form>
+                        </td>
+
+                @endforeach
 </div>
 
 @endsection

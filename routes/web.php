@@ -5,6 +5,7 @@ use App\Http\Controllers\loginController;
 use App\Http\Controllers\PostSugestController;
 use App\Http\Controllers\FacebookController;
 use App\Http\Controllers\TugasController;
+use App\Models\Kegiatan;
 use Illuminate\Support\Facades\Route;
 
 
@@ -78,6 +79,7 @@ Route::get('/harian-minggu',[TugasController::class,'indexMinggu']);
 Route::post ('/postTugas', [TugasController::class, 'store']);
 // end harian
 
-//route ubah profill
+Route::resource('kegiatan', KegiatanController::class);
+
 Route::get('/setting', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
 Route::put('/setting', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
